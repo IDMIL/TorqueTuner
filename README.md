@@ -4,8 +4,8 @@ TorqueTuner  is  an  embedded  module  that  allows  Digital Musical Instrument 
 
 [Demonstration video](https://vimeo.com/404592134)  
 
-<img src=/images/standalone_knob.jpg height="200" >
-<img src=/images/standalone_knob_open.jpg height="200" >
+<img src=/images/standalone_knob.jpg height="400" >
+<img src=/images/standalone_knob_open.jpg height="400" >
 
 The hardware is based on the ESP32 microcontroller and the [mechaduino](https://github.com/jcchurch13/Mechaduino-Hardware) platform, to implement a force feedback rotary encoder with 3600 PPR ~= 0.1 degree resolution that can display forces up to 45 Ncm (63.7oz.in).
 
