@@ -47,5 +47,8 @@ Upload ESP32 firmware
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the mangetic encoder with the known step angle given. 
 
 ## Usage
+Write about how to use libmapper, supported audio environments and examples
 
 ## Building the hardware
+
+## T-stick integration
