@@ -55,3 +55,8 @@ Write about how to use libmapper, supported audio environments and examples
 ## Building the hardware
 
 ## T-stick integration
+
+<div align="center">
+
+<img src="/images/TorqueTuner+T-stick.png" height="400">
+</div>
