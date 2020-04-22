@@ -58,5 +58,10 @@ Write about how to use libmapper, supported audio environments and examples
 
 <div align="center">
 
+<img src="/images/HapticKnob_tstick_exploded1.png" height="600">
+</div>
+
+<div align ="center">
+
 <img src="/images/TorqueTuner+T-stick.png" height="400">
 </div>
