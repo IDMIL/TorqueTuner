@@ -1,6 +1,6 @@
-# TorqueTuner: A self contained module for designing rotaryhaptic force feedback for digital musical instruments.
+# TorqueTuner: A self contained module for designing rotary haptic force feedback for digital musical instruments.
 
-TorqueTuner  is  an  embedded  module  that  allows  Digital Musical Instrument (DMI) designers to map sensors to parameters  of  haptic  effects  and  dynamically  modify  rotary force  feedback  in  real-time. It comes with an embedded collection of haptic effects, and a is wireless bi-directional interfacethrough [libmapper](https://github.com/libmapper/libmapper).
+TorqueTuner  is  an  embedded  module  that  allows  Digital Musical Instrument (DMI) designers to map sensors to parameters  of  haptic  effects  and  dynamically  modify  rotary force  feedback  in  real-time. It comes with an embedded collection of haptic effects, and a is wireless bi-directional interface through [libmapper](https://github.com/libmapper/libmapper).
 
 [Demonstration video](https://vimeo.com/404592134)  
 
@@ -14,13 +14,13 @@ The hardware is based on the ESP32 microcontroller and the [mechaduino](https://
 
 ## Installation
 
-Clone this repository and all of its submodules  
-
-    git clone --recursive 'https://gitlab.com/idmil/haptics/torquetuner
+Clone this repository and all of its submodules:
+	
+    git clone --recursive https://gitlab.com/idmil/haptics/torquetuner
 
 ## libmapper
 
-on MacOs 
+on MacOs:
 
     git clone https://github.com/libmapper/libmapper.git
     cd libmapper
@@ -35,22 +35,22 @@ The libmapper arduino library needs to be compiled and moved to the Arduino libr
 ## Upload firmware
 
 Upload mechaduino firmware
-1. Open  software/Mechaduino-firmware/Mechaduino/Mechaduino.ino in arduino  
+1. Open software/Mechaduino-firmware/Mechaduino/Mechaduino.ino in arduino  
 2. Choose board -> arduino zero  
 3. Upload  
 
 Upload ESP32 firmware
 
 1. Install [arduino-ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md) using boards manager 
-2. Open  software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino 
-3. Choose board -> TinyPco 
+2. Open software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino 
+3. Choose board -> TinyPico 
 4. Upload  
 
 ## Calibration
-Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the mangetic encoder with the known step angle given. 
+Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
 
 ## Usage
-Write about how to use libmapper, supported audio environments and examples
+TODO Write about how to use libmapper, supported audio environments and examples
 
 ## Building the hardware
 
