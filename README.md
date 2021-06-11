@@ -44,7 +44,8 @@ Upload ESP32 firmware
 1. Install [arduino-ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md) using boards manager 
 2. Open software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino 
 3. Choose board -> TinyPico 
-4. Upload  
+4. Download TinyPico Arduino Helper (https://github.com/tinypico/tinypico-arduino/tree/master/TinyPICO-Helper) to the Arduino libraries folder.  
+5. Upload  
 
 ## Calibration
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
