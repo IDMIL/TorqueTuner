@@ -20,6 +20,11 @@ Clone this repository and all of its submodules:
 
 ### Program mappings on you computer
 
+### Install Python3 and Pyserial
+on Linux:
+
+    sudo apt install python3 python-is-python3
+    sudo apt-get install python3-serial
 #### Install libmapper
 
 on MacOs:
