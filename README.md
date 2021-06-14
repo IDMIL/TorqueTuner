@@ -51,11 +51,12 @@ Upload ESP32 firmware
 1. Install [arduino-ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md) using boards manager
 2. In Arduino IDE, go to preferences, click under "More preferences cab be edited directlyh in the file".   packages>esp32>hardware>esp32>1.0.6>tools>sdk>include>lwip>arpa and access the inet.h file. Apply the following modifications:
 change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/inet.h"` . 
-3. Open software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino 
-4. Choose board -> TinyPico 
-5. Download TinyPico Arduino Helper (https://github.com/tinypico/tinypico-arduino/tree/master/TinyPICO-Helper) to the Arduino libraries folder, or directly through the Arduino IDE Library Manager.
-6. Modify WIFI credentials correspondingly (see around line 14-18)
-7. Upload  
+3. Open software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino
+4. Change part of the code as displayed [here](https://gitlab.com/idmil/haptics/TorqueTuner-ESP32/-/commit/84bfbb211ef643d7faa20d303f8e1e38cba5f807) 
+5. Choose board -> TinyPico 
+6. Download TinyPico Arduino Helper (https://github.com/tinypico/tinypico-arduino/tree/master/TinyPICO-Helper) to the Arduino libraries folder, or directly through the Arduino IDE Library Manager.
+7. Modify WIFI credentials correspondingly (see around line 14-18)
+8. Upload  
 
 #### Calibrate
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
