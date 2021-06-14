@@ -18,7 +18,9 @@ Clone this repository and all of its submodules:
 	
     git clone --recursive https://gitlab.com/idmil/haptics/torquetuner
 
-## libmapper
+### Program mappings on you computer
+
+#### Install libmapper
 
 on MacOs:
 
@@ -28,11 +30,16 @@ on MacOs:
     make
     make install
 
-## libmapper arduino library 
-<update to include a release.zip as submodule>
-The libmapper arduino library needs to be compiled and moved to the Arduino libraries folder. See [instructions](https://github.com/mathiasbredholt/libmapper_arduino)
+#### Install webmapper
 
-## Upload firmware
+TODO
+
+### Program embedded devices
+#### Install libmapper arduino library for ESP32
+<update to include a release.zip as submodule>
+The libmapper arduino library needs to be compiled and moved to the Arduino libraries folder. See [instructions](https://gitlab.com/idmil/haptics/libmapper-arduino/-/tree/rotarep)
+
+#### Upload firmware
 
 Upload mechaduino firmware
 1. Open software/Mechaduino-firmware/Mechaduino/Mechaduino.ino in arduino  
@@ -48,7 +55,7 @@ Upload ESP32 firmware
 5. Modify WIFI credentials correspondingly (see around line 14-18)
 6. Upload  
 
-## Calibration
+#### Calibrate
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
 
 ## Usage
