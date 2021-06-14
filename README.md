@@ -55,8 +55,9 @@ change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/ine
 4. Change part of the code as displayed [here](https://gitlab.com/idmil/haptics/TorqueTuner-ESP32/-/commit/84bfbb211ef643d7faa20d303f8e1e38cba5f807) 
 5. Choose board -> TinyPico 
 6. Download TinyPico Arduino Helper (https://github.com/tinypico/tinypico-arduino/tree/master/TinyPICO-Helper) to the Arduino libraries folder, or directly through the Arduino IDE Library Manager.
-7. Modify WIFI credentials correspondingly (see around line 14-18)
-8. Upload  
+7. Run `update-library.sh`  in the libmapper directory. (torquetuner>software>libmapper_arduino)
+8. Modify WIFI credentials correspondingly (see around line 15-20)
+9. Upload  
 
 #### Calibrate
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
