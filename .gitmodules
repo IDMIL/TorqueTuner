@@ -9,4 +9,4 @@
 	url = https://gitlab.com/idmil/haptics/Mechaduino-firmware.git
 [submodule "MapperUGen.git"]
 	path = software/MapperUGen
-	url = https://github.com/mathiasbredholt/MapperUGen.git
+	url = https://gitlab.com/idmil/haptics/MapperUGen.git
