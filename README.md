@@ -85,6 +85,8 @@ sudo apt install supercollider-dev
 
 in `software/MapperUGen`:
 ```
+mkdir -p build
+cd build
 cmake -DSUPERNOVA=ON -DSC_PATH=/usr/include/SuperCollider -DCMAKE_INSTALL_PREFIX=/usr ..
 -sudo checkinstall --pkgname=MapperUGen --pkgversion=0.0.1 --pkgrelease=0 --requires="libmapper-dev" --exclude="/home" -y
 ```
