@@ -68,6 +68,33 @@ change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/ine
 #### Calibrate
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
 
+
+### Test demos
+
+#### Install SuperCollider
+
+```
+sudo apt install supercollider supercollider-ide
+```
+#### Install MapperUGen
+
+
+```
+sudo apt install supercollider-dev
+```
+
+in `software/MapperUGen`:
+```
+cmake -DSUPERNOVA=ON -DSC_PATH=/usr/include/SuperCollider -DCMAKE_INSTALL_PREFIX=/usr ..
+-sudo checkinstall --pkgname=MapperUGen --pkgversion=0.0.1 --pkgrelease=0 --requires="libmapper-dev" --exclude="/home" -y
+```
+
+#### Load demos
+
+Load [demos](demos) with `scide` (supercollider-ide).
+
+TODO Describe demos
+
 ### Generate documentation (optional)
 
 Install graphviz: `sudo apt install graphviz`
