@@ -38,13 +38,15 @@ on MacOs:
 #### Installing and running webmapper
 
 To install webmapper, you'll need to have installed libmapper before. After that, you'll have to install a few dependencies:
-    pyserial (python should have already been installed):   `sudo apt-get install python3-serial`
-    liblo:      `sudo apt install liblo-dev`
-    swig:       `sudo apt install swig`
+- pyserial (python should have already been installed):   `sudo apt-get install python3-serial`
+- liblo:      `sudo apt install liblo-dev`
+- swig:       `sudo apt install swig`
+
 If any other installations are required, follow the same instructions, ie. `sudo apt install ...`
 
 Copy `_mapper.cpython-38-x86_64-linux-gnu.so` and `mapper.py` from the directory /libmapper/swig into /webmapper directory.
-Now tou can run webmapper by running `webmapper.py` from terminal (from inside the /webmapper directory). The terminal will display "serving at port #####", and a browser window should be opened automatically and directed to the correct port.
+
+Now you can run webmapper by running `webmapper.py` from terminal (from inside the /webmapper directory). The terminal will display "serving at port #####", and a browser window should be opened automatically and directed to the correct port.
 
 
 ### Program embedded devices
