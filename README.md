@@ -35,9 +35,19 @@ on MacOs:
     make
     make install
 
-#### Install webmapper
+#### Installing and running webmapper
 
-TODO
+To install webmapper, you'll need to have installed libmapper before. After that, you'll have to install a few dependencies:
+- pyserial (python should have already been installed):   `sudo apt-get install python3-serial`
+- liblo:      `sudo apt install liblo-dev`
+- swig:       `sudo apt install swig`
+
+If any other installations are required, follow the same instructions, ie. `sudo apt install ...`
+
+Copy `_mapper.cpython-38-x86_64-linux-gnu.so` and `mapper.py` from the directory /libmapper/swig into /webmapper directory.
+
+Now you can run webmapper by running `webmapper.py` from terminal (from inside the /webmapper directory). The terminal will display "serving at port #####", and a browser window should be opened automatically and directed to the correct port.
+
 
 ### Program embedded devices
 #### Install libmapper arduino library for ESP32
@@ -56,7 +66,7 @@ Upload ESP32 firmware
 1. Install [arduino-ESP32](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md) using boards manager
 2. In Arduino IDE, go to preferences, click under "More preferences cab be edited directlyh in the file".   packages>esp32>hardware>esp32>1.0.6>tools>sdk>include>lwip>arpa and access the inet.h file. Apply the following modifications:
 change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/inet.h"` .
-3. Install Pyserial: `sudo apt-get install python3-serial` 
+3. Install Pyserial (if not already installed): `sudo apt-get install python3-serial` 
 4. Open software/TorqueTuner-ESP32/firmware/ESP32/ESP32.ino in arduino
 5. Change part of the code as displayed [here](https://gitlab.com/idmil/haptics/TorqueTuner-ESP32/-/commit/84bfbb211ef643d7faa20d303f8e1e38cba5f807) 
 6. Choose board -> TinyPico 
