@@ -13,7 +13,7 @@ s.waitForBoot({
 	////////////// Load buffer  //////////////
 	~samplePath = thisProcess.nowExecutingPath.dirname +/+ "drums-80bpm.wav";
 	~sample = Buffer.read(s,~samplePath);
-	1.wait;
+	4.wait; // Wait 4 seconds for libmapper initialization
 
 
 	////////////// Output signals  //////////////

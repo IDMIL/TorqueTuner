@@ -15,7 +15,7 @@ To run it do:
 // Start libmapper
 s.waitForBoot({
 	Mapper.enable;
-	1.wait;
+	4.wait; // Wait 4 seconds for libmapper initialization
 	////////////// Output signals  //////////////
 	~mode = Bus.control;
 	{

@@ -9,7 +9,7 @@ Stop it by pressing CMD+.
 // Start libmapper
 s.waitForBoot({
 	a  = Mapper.enable;
-	1.wait;
+	4.wait; // Wait 4 seconds for libmapper initialization
 	////////////// Output signals  //////////////
 
 
