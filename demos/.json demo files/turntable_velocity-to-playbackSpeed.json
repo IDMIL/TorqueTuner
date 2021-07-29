@@ -1,0 +1,58 @@
+{
+	"fileversion": "2.3",
+	"mapping": {
+		"maps": [
+			{
+				"sources": [
+					{
+						"name": "TorqueTuner.1/Velocity",
+						"direction": "output",
+						"length": 1,
+						"maximum": 700,
+						"minimum": -700,
+						"num_instances": 1,
+						"type": "f",
+						"unit": "unknown",
+						"use_inst": false
+					}
+				],
+				"destinations": [
+					{
+						"name": "SuperCollider.1/PlaybackSpeed",
+						"direction": "input",
+						"length": 1,
+						"maximum": 1,
+						"minimum": -1,
+						"num_instances": 1,
+						"type": "f",
+						"unit": "unknown",
+						"use_inst": false
+					}
+				],
+				"selected": true,
+				"timeout": 4408,
+				"expression": "sMin=-700;sMax=700;dMin=-1;dMax=1;sRange=sMax-sMin;m=sRange?((dMax-dMin)/sRange):0;b=sRange?(dMin*sMax-dMax*sMin)/sRange:dMin;dst=m*src[0]+b;",
+				"muted": false,
+				"num_sigs_in": 1,
+				"process_loc": "src",
+				"protocol": "UDP",
+				"scope": [
+					"TorqueTuner.1"
+				],
+				"use_inst": false,
+				"version": 0,
+				"directio": "output",
+				"var@b": 0,
+				"var@dMax": 1,
+				"var@dMin": -1,
+				"var@m": 0.0014285714132711291,
+				"var@sMax": 700,
+				"var@sMin": -700,
+				"var@sRange": 1400
+			}
+		]
+	},
+	"views": {
+		"signals": []
+	}
+}
