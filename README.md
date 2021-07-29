@@ -120,7 +120,7 @@ In this example, a .wav file sampling a couple of drums should play at a playbac
 
 Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel.json) into SuperCollider.
 
-In this example, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The user should observe an angle at which there is a discontinuity, where the cutoff frequency goes back to its minimum value, right after having reached it maximum value.
+In this example, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The user should observe an angle at which there is a discontinuity, where the cutoff frequency goes back to its minimum value, right after having reached it maximum value (and vice versa).
 
 **2.b Mapping speed to resonance with the `PitchWheel` example, in haptic mode = Spring.**
 
