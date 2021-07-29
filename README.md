@@ -110,13 +110,13 @@ _General Tips for testing demos:_
 - When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
 
 
-**1. Mapping velocity to playback speed with the "Turntable" example, in haptic mode = Spin. **
+**1. Mapping velocity to playback speed with the "Turntable" example, in haptic mode = Spin.**
 
 Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Turntable.json) into SuperCollider.
 
 In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
 
- **2. Mapping angle to the Filter Cutoff frequency with the "PitchWheel" example, in haptic mode = Spring. **
+ **2. Mapping angle to the Filter Cutoff frequency with the "PitchWheel" example, in haptic mode = Spring.**
 
 Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel.json) into SuperCollider.
 
