@@ -79,23 +79,6 @@ change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/ine
 Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibration-routine) on calibrating the magnetic encoder with the known step angle given. 
 
 
-### Test demos
-_General Tips:_
-
-- When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
-
-
-#### 1. Mapping velocity to playback speed with the "Turntable" example, in haptic mode = Spin. 
-
-Upload this [.json file](demos/.json demo files/turntable_velocity-to-playbackSpeed.json) into SuperCollider.
-
-In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
-
-#### 2. Mapping angle to the Filter Cutoff frequency with the "PitchWheel" example, in haptic mode = Spring. 
-
-Upload this [.json file](demos/.json demo files/pitchWheel_angle-to-FilterCutoff.json) into SuperCollider.
-
-In this example, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The user should observe an angle at which there is a discontinuity, where the cutoff frequency goes back to its minimum value, right after having reached it maximum value.
 
 #### Install SuperCollider
 
@@ -122,7 +105,22 @@ sudo checkinstall --pkgname=MapperUGen --pkgversion=0.0.1 --pkgrelease=0 --requi
 
 Load [demos](demos) with `scide` (supercollider-ide).
 
-TODO Describe demos
+_General Tips for testing demos:_
+
+- When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
+
+
+**1. Mapping velocity to playback speed with the "Turntable" example, in haptic mode = Spin. **
+
+Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Turntable.json) into SuperCollider.
+
+In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
+
+ **2. Mapping angle to the Filter Cutoff frequency with the "PitchWheel" example, in haptic mode = Spring. **
+
+Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel.json) into SuperCollider.
+
+In this example, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The user should observe an angle at which there is a discontinuity, where the cutoff frequency goes back to its minimum value, right after having reached it maximum value.
 
 ### Generate documentation (optional)
 
