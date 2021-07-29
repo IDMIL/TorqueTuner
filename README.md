@@ -80,6 +80,17 @@ Follow [instructions](https://github.com/jcchurch13/Mechaduino-Firmware#calibrat
 
 
 ### Test demos
+_General Tips:_
+
+- When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
+
+
+#### 1. Mapping velocity to playback speed with the "Turntable" example, in haptic mode = Spin. 
+
+Upload this [.json file](demos/.json demo files/turntable_velocity-to-playbackSpeed.json) into SuperCollider.
+
+In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned by the user, you should observe an increase in the speed at which the drums.wav file is played.
+
 
 #### Install SuperCollider
 
