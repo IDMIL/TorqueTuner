@@ -89,7 +89,7 @@ _General Tips:_
 
 Upload this [.json file](demos/.json demo files/turntable_velocity-to-playbackSpeed.json) into SuperCollider.
 
-In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned by the user, you should observe an increase in the speed at which the drums.wav file is played.
+In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
 
 
 #### Install SuperCollider
