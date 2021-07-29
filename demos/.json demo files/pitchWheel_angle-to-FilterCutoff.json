@@ -1,0 +1,48 @@
+{
+	"fileversion": "2.3",
+	"mapping": {
+		"maps": [
+			{
+				"sources": [
+					{
+						"name": "TorqueTuner.1/Angle",
+						"direction": "output",
+						"length": 1,
+						"maximum": 3600,
+						"minimum": 0,
+						"num_instances": 1,
+						"type": "i",
+						"unit": "unknown",
+						"use_inst": false
+					}
+				],
+				"destinations": [
+					{
+						"name": "SuperCollider.1/FilterCutoff",
+						"direction": "input",
+						"length": 1,
+						"maximum": 1,
+						"minimum": 0,
+						"num_instances": 1,
+						"type": "f",
+						"unit": "unknown",
+						"use_inst": false
+					}
+				],
+				"expression": "sMin=0;sMax=3600;dMin=0;dMax=1;sRange=sMax-sMin;m=sRange?((dMax-dMin)/sRange):0;b=sRange?(dMin*sMax-dMax*sMin)/sRange:dMin;dst=m*src[0]+b;",
+				"muted": false,
+				"num_sigs_in": 1,
+				"process_loc": "src",
+				"protocol": "UDP",
+				"scope": [
+					"TorqueTuner.1"
+				],
+				"use_inst": false,
+				"version": 0
+			}
+		]
+	},
+	"views": {
+		"signals": []
+	}
+}
