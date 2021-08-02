@@ -155,6 +155,7 @@ B. Adding the mapping between `angle` and `frequency` to demo 3.A, in haptic mod
 
 
 
+
 ### Generate documentation (optional)
 
 Install graphviz: `sudo apt install graphviz`
