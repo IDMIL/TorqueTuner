@@ -116,17 +116,29 @@ _General Tips for testing demos:_
 
 - In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
 
- **2.a Mapping angle to the Filter Cutoff frequency with the `PitchWheel` example, in haptic mode = Spring.**
+**2.a Mapping angle to the Filter Cutoff frequency with the `PitchWheel` example, in haptic mode = Spring.**
 
-- Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel.json) into SuperCollider.
+- Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel_a.json) into SuperCollider.
 
 - In this example, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The user should observe an angle at which there is a discontinuity, where the cutoff frequency goes back to its minimum value, right after having reached it maximum value (and vice versa).
 
-**2.b Mapping speed to resonance with the `PitchWheel` example, in haptic mode = Spring.**
+**2.b Adding speed-to-resonance mapping to demo 2.a with the `PitchWheel` example, in haptic mode = Spring.**
 
-- tbd
+- Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/Pitchwheel_b.json) into SuperCollider.
 
-**3. Mapping trigger to excitation with the `String-plucker` example, in haptic mode = Detents.**
+- Similarly to demo 2.a, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The difference from demo 2.a, is that the user should notice the addition of resonance, whose intensity varies with the speed applied on the knob. The best way to observe this behaviour is to turn the knob back and forth at varying speed. 
+
+**3.a Mapping trigger to excitation with the `String-plucker` example, in haptic mode = Detents.**
+
+- Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/string-plucker_a.json) into SuperCollider.
+
+- In this configuration, the user should experience a similar sensation to plucking a string, where turning the knob will trigger the sound of an individual string being excited by a plucking, at each detent.
+
+**3.b Mapping angle to frequency with the `String-plucker` example, in haptic mode = Detents.**
+
+- Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/string-plucker_b.json) into SuperCollider.
+
+- In this configuration, the user should experience the same sensation as in demo 3.a, only this time the frequency of the note being played will change progressively with the angle of the knob. As a result, the user should observe a progressive increase in the frequency of the note as the knob is turned clock-wise. The user should observe an angle at which there is a frequency discontinuity, where the frequency goes back to its minimum value, right after having reached it maximum value (and vice versa). 
 
 
 ### Generate documentation (optional)
