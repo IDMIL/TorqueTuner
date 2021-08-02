@@ -107,6 +107,8 @@ Load [demos](demos) with `scide` (supercollider-ide).
 
 _General Tips for testing demos:_
 
+- When creating a signal in superCollider, if they don't appear in the Mapper GUI, they might appear after relaunching the Mapper GUI.
+ 
 - When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
 
 **1. Turntable**
@@ -150,6 +152,7 @@ B. Adding the mapping between `angle` and `frequency` to demo 3.A, in haptic mod
 - Upload this [.json file](https://gitlab.com/idmil/haptics/torquetuner/-/blob/Rotarep/demos/string-plucker_b.json) into SuperCollider.
 
 - In this configuration, the user should experience the same sensation as in demo 3.a, only this time the frequency of the note being played will change progressively with the angle of the knob. As a result, the user should observe a progressive increase in the frequency of the note as the knob is turned clock-wise. The user should observe an angle at which there is a frequency discontinuity, where the frequency goes back to its minimum value, right after having reached it maximum value (and vice versa). 
+
 
 
 ### Generate documentation (optional)
