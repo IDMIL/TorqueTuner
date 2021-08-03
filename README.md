@@ -111,7 +111,7 @@ _General Tips for testing demos:_
  
 - When the motor goes off at uncontrollable speed, mapping "angle" to "Damping" generally works to bring it back to still.
 
-**1. Turntable**
+##### **1. Turntable**
 
 _A turntable-like application, where playback can be stopped by stalling the motor, and scratching can be performed by twisting it back and forth._
 
@@ -121,7 +121,7 @@ A. Mapping `velocity` to `playback speed`, in haptic mode : Spin.
 
 - In this example, a .wav file sampling a couple of drums should play at a playback speed that varies with the velocity of the knob applied by the user. When the knob is turned clockwise by the user, you should observe an increase in the speed at which the drums.wav file is played. Similarly, when the knob is turned counterclockwise, you should observe an increase in the speed at which the drums.wav file is played in reverse playback.
 
-**2. PitchWheel**
+##### **2. PitchWheel**
 
 _An application reminiscent of the pitch wheel common in many keyboard synthesizers. When twisting, TorqueTuner displays an exponentially increasing force, when released it returns to idle._
 
@@ -137,7 +137,7 @@ B. Adding the mapping between `speed` and `resonance` to demo 2.A, in haptic mod
 
 - Similarly to demo 2.a, the user turns the knob to observe the effect of sweeping the Cutoff frequency of a filter. The difference from demo 2.a, is that the user should notice the addition of resonance, whose intensity varies with the speed applied on the knob. The best way to observe this behaviour is to turn the knob back and forth at varying speed. 
 
-**3. String-Plucker**
+##### **3. String-Plucker**
 
 _Detents serve as haptic feedback on virtual string plucking, and twisting in-between detents produce vibrato-like modulation._
 
