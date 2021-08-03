@@ -178,6 +178,8 @@ Then explore with a web browser the generated documentation, for example:
 ## Usage
 TODO Write about how to use libmapper, supported audio environments and examples
 
+Note that the ESP32 board needs a USB cable connected for power supply (also useful for flashing with Arduino IDE and debugging with serial monitor.
+
 ## Building the hardware
 
 ## T-stick integration
