@@ -103,7 +103,7 @@ sudo checkinstall --pkgname=MapperUGen --pkgversion=0.0.1 --pkgrelease=0 --requi
 
 #### Load demos
 
-Load [demos](demos) with `scide` (supercollider-ide).
+Load [demos](demos) and do mappings manually with `scide` (supercollider-ide).
 
 _General Tips for testing demos:_
 
