@@ -1,3 +1,5 @@
 *.3mf
 software/html
 software/latex
+
+.DS_Store
