@@ -72,7 +72,7 @@ change `#include "../../../lwip/src/include/lwip/inet.h"` to `#include "lwip/ine
 6. Choose board -> TinyPico 
 7. Download TinyPico Arduino Helper (https://github.com/tinypico/tinypico-arduino/tree/master/TinyPICO-Helper) to the Arduino libraries folder, or directly through the Arduino IDE Library Manager.
 8. Run `update-library.sh`  in the libmapper directory. (torquetuner>software>libmapper_arduino)
-9. Modify WIFI credentials correspondingly (see around line 15-20)
+9. Modify WIFI credentials correspondingly (see around line 15-20, edit SSID and PASSWORD)
 10. Upload. *(in case of error: _selected serial port could not open port /dev/ttyUSB0_, make sure that access to USB is not restricted. To solve this, run `sudo usermod -a -G dialout $USER` and restart).
 
 #### Calibrate
