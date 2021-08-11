@@ -180,7 +180,7 @@ TODO Write about how to use libmapper, supported audio environments and examples
 
 Note that the ESP32 board needs a USB cable connected for power supply (also useful for flashing with Arduino IDE and debugging with serial monitor.
 
-## Choice of Motor-Controller system to replace the Mechaduino: uStepperS vs. Moteus r4.5
+### Choice of Motor-Controller system to replace the Mechaduino: uStepperS vs. Moteus r4.5
 Context, background, things to keep in mind:      
 The TorqueTuner was originally designed and implemented using the Mechaduino system (out of stock, as of August 2021). The designed firmware for the Mechaduino implementation made use of torque control to control the motor, and relied on the Arduino IDE. 
 
@@ -195,11 +195,11 @@ _Price developer kit: EUR 96_
 **PROS:**
 - Uses the Arduino IDE;
 - Compact in size, would be easier to physically integrate with the T-stick;
-- Cheapest option;
+- Cheapest option.
 
 **CONS:**
 - No torque control. uStepperS is mainly designed for position or velocity control, so the firmware requires some fair modifications and could perhaps resurface problems in the future?
-- stepper motor, can sense clogging.
+- Stepper motor, can sense clogging.
 
 #### Moteus r4.5
 _Price main components: motor (USD 55) + board (USD 84) = USD 139_
@@ -207,12 +207,14 @@ _Price main components: motor (USD 55) + board (USD 84) = USD 139_
 _Price developer kit: USD 174_
 
 **PROS:**
-- Torque control
-- Brushless motor, less clogging
+- Uses Torque control;
+- Brushless motor, less clogging.
 
 **CONS:**
-- Has it's own GUI, not directly compatible with Arduino IDE, requires some work around.
-- 
+- Has it's own GUI, not directly compatible with Arduino IDE, requires some work around;
+- Expensive.
+
+
 
 ## Building the hardware
 
