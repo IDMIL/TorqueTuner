@@ -180,7 +180,7 @@ TODO Write about how to use libmapper, supported audio environments and examples
 
 Note that the ESP32 board needs a USB cable connected for power supply (also useful for flashing with Arduino IDE and debugging with serial monitor.
 
-### Choice of Motor-Controller system to replace the Mechaduino: uStepperS vs. Moteus r4.5
+## Choice of Motor-Controller system to replace the Mechaduino: uStepperS vs. Moteus r4.5
 Context, background, things to keep in mind:      
 The TorqueTuner was originally designed and implemented using the Mechaduino system (out of stock, as of August 2021). The designed firmware for the Mechaduino implementation made use of torque control to control the motor, and relied on the Arduino IDE. 
 
