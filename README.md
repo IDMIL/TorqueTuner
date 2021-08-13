@@ -211,7 +211,7 @@ _Price developer kit: USD 174_
 - Brushless motor, less clogging.
 
 **CONS:**
-- Has it's own GUI, not directly compatible with Arduino IDE, requires some work around; **ISSUE SOLVED**
+- Has it's own GUI, not directly compatible with Arduino IDE, requires some work around; **ISSUE RESOLVED**
 - Expensive.
 
 
