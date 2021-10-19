@@ -10,3 +10,7 @@
 [submodule "MapperUGen.git"]
 	path = software/MapperUGen
 	url = https://gitlab.com/idmil/haptics/MapperUGen.git
+[submodule "software/moteus"]
+	path = software/moteus
+	url = https://gitlab.com/idmil/haptics/moteus.git
+	branch = RotaRep
