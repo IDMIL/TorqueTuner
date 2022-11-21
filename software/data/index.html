@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <p><a href="/">Config</a> &nbsp;&nbsp; <a href="/scan.html">Scan</a> &nbsp;&nbsp; <a href="/settings.html">Settings</a>
+
+    <h1>%DMINAME%<h1>
+            <p>%STATUS%</p>
+            <h2>Config:</h2>
+            <div class="container">
+
+                <form method="post" action="/#">
+                    <div class="row">
+                        <h3>Network: </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="SSID">SSID</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="SSID" name="SSID" placeholder="Network SSID..."
+                                value="%CURRENTSSID%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="password">SSID Password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="password" id="password" name="password" placeholder="Network password..." value="%CURRENTPSK%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h3>%DEVICENAME% password:</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="APpasswd">New password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="password" id="APpasswd" name="APpasswd"
+                                placeholder="(leave empty to keep current password)">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="APpasswdValidate">Retype new password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="password" id="APpasswdValidate" name="APpasswdValidate"
+                                placeholder="(leave empty to keep current password)">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" id="persistentAP" name="persistentAP" value="true" %CURRENTPERSISTENT%>
+                            <label for="PersistentAP"> Persistent AP mode</label><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h3>OSC send settings:</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="oscIP1">Primary IP</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="oscIP1" name="oscIP1" pattern="\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b" placeholder="0.0.0.0" value="%CURRENTOSC1%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="oscPORT1">Primary port</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="oscPORT1" name="oscPORT1" placeholder="0000" min="0" max="99999" value="%CURRENTPORT1%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="oscIP2">Secondary IP</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="oscIP2" name="oscIP2" pattern="\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b" placeholder="0.0.0.0" value="%CURRENTOSC2%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="oscPORT2">Secondary port</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="oscPORT2" name="oscPORT2" placeholder="0000" min="0" max="99999" value="%CURRENTPORT2%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="localPORT">Local port</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="localPORT" name="localPORT" placeholder="0000" min="0" max="99999" value="%CURRENTLOCALPORT%">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Save" action="/">
+                    </div>
+                </form>
+
+            </div>
+
+            <h2>Network info:</h2>
+            <div class="container">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Current stored SSID:</td>
+                            <td>%CURRENTSSID2%</td>
+                        </tr>
+                        <tr>
+                            <td>Current IP address (STA):</td>
+                            <td>%CURRENTIP%</td>
+                        </tr>
+                        <tr>
+                            <td>Access Point IP:</td>
+                            <td>%CURRENTAPIP%</td>
+                        </tr>
+                        <tr>
+                            <td>Station (STA) MAC:</td>
+                            <td>%CURRENTSTAMAC%</td>
+                        </tr>
+                        <tr>
+                            <td>Access Point MAC:</td>
+                            <td>%CURRENTAPMAC%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <p><a href="/scan.html"><button class="button">scan for networks</button></a></p>
+
+            <h2>Instrument info:</h2>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>ID (serial #):</td>
+                        <td>%MODULEID%</td>
+                    </tr>
+                    <tr>
+                        <td>Device author:</td>
+                        <td>%MODULEAUTH%</td>
+                    </tr>
+                    <tr>
+                        <td>Institution:</td>
+                        <td>%MODULEINST%</td>
+                    </tr>
+                    <tr>
+                        <td>Firmware version: </td>
+                        <td>%MODULEVER%</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br>
+                <form action="" method="post">
+                    <input type="submit" float="center" name="reboot" value="Close and reboot">
+                </form>
+
+            <br><br>
+
+</body>
+
+</html>

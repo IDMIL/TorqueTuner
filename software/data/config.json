@@ -1,0 +1,15 @@
+{
+    "device": "TorqueTuner",
+    "id": 1,
+    "author": "Albert-Ngabo Niyonsenga",
+    "institution": "SAT/IDMIL (2022)",
+    "APpasswd": "mappings",
+    "wifiSSID": "tstick_network",
+    "wifiPSK": "mappings",
+    "persistentAP": 1,
+    "oscIP1": "192.168.4.2",
+    "oscPORT1": 8000,
+    "oscIP2": "192.168.0.100",
+    "oscPORT2": 8000,
+    "localPORT": 8000
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+
+<body>
+    <p><a href="/">Config</a> &nbsp;&nbsp; <a href="/scan.html">Scan</a> &nbsp;&nbsp; <a href="/update.html">Update</a> &nbsp;&nbsp; <a href="/settings.html">Settings</a>
+
+    <h1>Firmware/SPIFFS update</h1>
+    <p>Choose the apropriate .bin file and click "Update"</p>
+
+    <form style="margin-bottom:0.5cm;" method='POST' action='/updateF' enctype='multipart/form-data'>
+        <input type='file' name='updateF'>
+        <input type='submit' id="fBtn" value='Update Firmware'>
+    </form>
+
+    <form style="margin-bottom:0.5cm;" method='POST' action='/updateS' enctype='multipart/form-data'>
+        <input type='file' name='updateS'>
+        <input type='submit' id="sBtn" value='Update SPIFFS'>
+    </form>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Updating... please do not turn off the module. The system will reboot when done</p>
+        </div>
+
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var fbtn = document.getElementById("fBtn");
+        var sbtn = document.getElementById("sBtn");
+        var span = document.getElementsByClassName("close")[0];
+        fbtn.onclick = function () {
+            modal.style.display = "block";
+        }
+        sbtn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
